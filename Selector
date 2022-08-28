@@ -1,0 +1,5 @@
+if game.PlaceId == 8888615802 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/macarraocomfeijoada1/HsScript/main/Rainbow%20Friends.lua"))()
+    else
+    game.Players.LocalPlayer:Kick("WE DONT HAVE A SCRIPT IN THIS GAME")
+end

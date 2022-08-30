@@ -1,4 +1,4 @@
-local a = loadstring(game:HttpGet("https://pastebin.com/raw/isa5xn5y"))()
+local a = {"manfbaNAGJA12MVJaN46", "mqnfraNAgJA14MVJaN4m"}
 if getgenv().Key == unpack(a) then
     print("liberado, key certa")
     else

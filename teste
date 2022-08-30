@@ -1,6 +1,0 @@
-local a = {"manfbaNAGJA12MVJaN46", "mqnfraNAgJA14MVJaN4m"}
-if getgenv().Key == unpack(a) then
-    print("liberado, key certa")
-    else
-    print("Nao liberado, key errada")
-end

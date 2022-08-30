@@ -1,0 +1,3 @@
+if getgenv().Key == "manfbaNAGJA12MVJaN46" then
+    print("liberado, key certa")
+end

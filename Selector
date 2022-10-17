@@ -25,6 +25,8 @@ if game.PlaceId == 8888615802 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/macarraocomfeijoada1/HsScript/main/Rainbow%20Friends.lua"))()
     elseif game.PlaceId == 7991339063 then
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(298.323, 57.6155, -1030.26)
+    elseif game.PlaceId == 155615604 then
+    loadstring(game:HttpGet("https://github.com/macarraocomfeijoada1/HsScript/blob/main/prision%20life")()
     else
     game.Players.LocalPlayer:Kick("WE DONT HAVE A SCRIPT IN THIS GAME")
 end

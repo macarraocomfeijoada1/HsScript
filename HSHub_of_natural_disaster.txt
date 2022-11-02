@@ -1,0 +1,101 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+Tab:AddButton({
+	Name = "Copy Discord",
+	Callback = function()
+      		setclipboard("https://discord.gg/Ty4zemdhAR")
+  	end    
+})
+
+-------------------A-U-T-O-W-I-N-S-------------------
+
+local Tab = Window:MakeTab({
+	Name = "Auto wins",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+Tab:AddButton({
+	Name = "Auto Win 😀",
+	Callback = function()
+      		local New_Cframe = .CFrame
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_Cframe}
+ts:Create(part, ti, tp):Play()
+  	end    
+})
+-------------------TP-PLAYER-TO-OTHER-GAME-------------------
+
+local Tab = Window:MakeTab({
+	Name = "Destroyer Options",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+Tab:AddTextbox({
+	Name = "Teleport player to another map (Need tool)",
+	Default = "put the name of the player",
+	TextDisappear = true,
+	Callback = function(txt)
+local nm = math.random(1, 9999)
+local amm = "Hammer" .. nm
+--game.Players.LocalPlayer.Backpack.Hammer.Name = amm
+local CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local Target = (txt)
+for i,x in pairs(game.Players:GetPlayers()) do
+if x.Name == Target then
+game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
+local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid:Clone()
+Humanoid.BreakJointsOnDeath = false
+game.Players.LocalPlayer.Character.Animate.Disabled = true
+game:GetService("Players").LocalPlayer.Character.Humanoid:Destroy()
+Humanoid.Parent = game:GetService("Players").LocalPlayer.Character
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v:IsA("Tool") then
+        game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+        getgenv().a = true
+        while getgenv().a and wait() do
+        x.Character:FindFirstChild("HumanoidRootPart").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+        --wait(3)
+        --game.Players.LocalPlayer.Character.HumanoidRootPart:Destroy()
+        end
+    end
+end
+end
+end
+wait()
+game.Players.LocalPlayer.CharacterAdded:Wait():WaitForChild("HumanoidRootPart")
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+
+game.Players.LocalPlayer.Character.HumanoidRootPart:Destroy()
+wait()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		local New_Cframe = game:GetService("Workspace").ForwardPortal.AdGuiAdornee.CFrame
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_Cframe}
+ts:Create(part, ti, tp):Play()
+	end	  
+})
+OrionLib:Init()

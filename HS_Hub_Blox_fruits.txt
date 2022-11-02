@@ -1,0 +1,155 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+Tab:AddButton({
+	Name = "Copy Discord",
+	Callback = function()
+      		setclipboard("https://discord.gg/Ty4zemdhAR")
+  	end    
+})
+
+
+---------------------Auto-Farm---------------------
+
+local Tab = Window:MakeTab({
+	Name = "Auto farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+Tab:AddButton({
+	Name = "Auto farm",
+	Callback = function()
+      		print("Coming soon.........")
+  	end    
+})
+OrionLib:MakeNotification({
+	Name = "Auto farm....",
+	Content = "EN: the auto farm option will be released soon. BR: a opção de auto farm vai ser lançada em breve.",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+---------------------Auto-Status---------------------
+local Tab = Window:MakeTab({
+	Name = "Auto Status",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+Tab:AddButton({
+	Name = "Auto melee",
+	Callback = function()
+      		getgenv().a = true
+while getgenv().a and wait() do
+local args = {
+    [1] = "AddPoint",
+    [2] = "Melee",
+    [3] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Auto Defense",
+	Callback = function()
+      		getgenv().a = true
+while getgenv().a and wait() do
+local args = {
+    [1] = "AddPoint",
+    [2] = "Defense",
+    [3] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Auto Sword",
+	Callback = function()
+      		local args = {
+    [1] = "AddPoint",
+    [2] = "Sword",
+    [3] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Gun",
+	Callback = function()
+            getgenv().a = true
+while getgenv().a and wait() do
+local args = {
+    [1] = "AddPoint",
+    [2] = "Gun",
+    [3] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "Auto Demon Fruit",
+	Callback = function()
+      		getgenv().a = true
+while getgenv().a and wait() do
+local args = {
+    [1] = "AddPoint",
+    [2] = "Demon Fruit",
+    [3] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Disable Auto Status",
+	Callback = function()
+      		getgenv().a = false
+while getgenv().a and wait() do
+-- a prr do script aq
+end
+  	end    
+})
+
+---------------------Teleport-to-Islands---------------------
+
+local Tab = Window:MakeTab({
+	Name = "Teleport to Islands",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+OrionLib:Init()

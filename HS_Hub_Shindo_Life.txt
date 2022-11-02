@@ -1,0 +1,231 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "HS Hub Shindo Life", HidePremium = false, SaveConfig = true, ConfigFolder = "HSHubShindoLife"})
+local Tab = Window:MakeTab({
+	Name = "Home",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Welcome to this good hub!"
+})
+local Tab = Window:MakeTab({
+	Name = "Spin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Here you will have auto spin options, only options to use in the lobby in this tab"
+})
+Tab:AddButton({
+	Name = "spin all genkai slots (it's a loop) ",
+	Callback = function()
+      		getgenv().a = true
+while getgenv().a and wait() do
+local args = {
+    [1] = "spin",
+    [2] = "kg1"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "spin",
+    [2] = "kg2"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "spin",
+    [2] = "kg3"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "spin",
+    [2] = "kg4"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+end
+  	end    
+})
+Tab:AddButton({
+	Name = "spin all element slots (it's a loop)",
+	Callback = function()
+      		getgenv().a = true
+while getgenv().a and wait() do
+local args = {
+    [1] = "spin",
+    [2] = "element1"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "spin",
+    [2] = "element2"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "spin",
+    [2] = "element3"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "spin",
+    [2] = "element4"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+end
+  	end    
+})	
+Tab:AddButton({
+	Name = "Disable spin loop",
+	Callback = function()
+      		getgenv().a = false
+while getgenv().a and wait() do
+-- a prr do script aq
+end
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Auto Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Here you will have auto farm options to level up."
+})
+local Tab = Window:MakeTab({
+	Name = "Combos",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Here you will have combos to auto equip, I recommend having a bag"
+})
+local Section = Tab:AddSection({
+	Name = "Aqui você terá combos para auto equipar, Recomendo ter bag."
+})
+local Section = Tab:AddSection({
+	Name = "Use B + G + N + V + H + F"
+})
+Tab:AddButton({
+	Name = "brucekenichi + vegance + byakugangold + Kaijin",
+	Callback = function()
+      		local args = {
+    [1] = "kgbag",
+    [2] = "kg1",
+    [3] = "brucekenichi"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "kgbag",
+    [2] = "kg2",
+    [3] = "batman"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "kgbag",
+    [2] = "kg3",
+    [3] = "byakugangold"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "kgbag",
+    [2] = "kg4",
+    [3] = "sarutobi"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "equipjutsu",
+    [2] = "v",
+    [3] = game:GetService("ReplicatedStorage").alljutsu.brucekenichi.bruce1
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "equipjutsu",
+    [2] = "f",
+    [3] = game:GetService("ReplicatedStorage").alljutsu.brucekenichi.bruce3
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "equipjutsu",
+    [2] = "h",
+    [3] = game:GetService("ReplicatedStorage").alljutsu.brucekenichi.bruce2
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "equipjutsu",
+    [2] = "b",
+    [3] = game:GetService("ReplicatedStorage").alljutsu.batman.batty2
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "equipjutsu",
+    [2] = "n",
+    [3] = game:GetService("ReplicatedStorage").alljutsu.byakugangold.trigrams2
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+local args = {
+    [1] = "equipjutsu",
+    [2] = "g",
+    [3] = game:GetService("ReplicatedStorage").alljutsu.sarutobi.ashcloud
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Character Custom",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Here you can customize your skin even if you are in the village"
+})
+local Section = Tab:AddSection({
+	Name = "Aqui você poderá customizar sua skin mesmo que esteja na vila"
+})
+Tab:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 85,
+	Default = 5,
+	Color = Color3.fromRGB(295,265,255),
+	Increment = 1,
+	ValueName = "Hair",
+	Callback = function()
+local args = {
+    [1] = "hair",
+    [2] = "hair1"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+
+local args = {
+    [1] = "hair",
+    [2] = "hair2"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+
+local args = {
+    [1] = "hair",
+    [2] = "hair3"
+}
+
+game:GetService("Players").LocalPlayer.startevent:FireServer(unpack(args))
+	end    
+})

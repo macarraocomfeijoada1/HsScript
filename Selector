@@ -29,6 +29,8 @@ if game.PlaceId == 8888615802 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/macarraocomfeijoada1/HsScript/main/prision%20life"))()
     elseif game.PlaceId == 662417684 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/macarraocomfeijoada1/HsScript/main/lucky%20block%20battle"))()
+    elseif game.PlaceId == 10003129734 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/macarraocomfeijoada1/HsScript/main/virusroleplay"))()
     else
     game.Players.LocalPlayer:Kick("WE DONT HAVE A SCRIPT IN THIS GAME")
 end

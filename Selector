@@ -33,6 +33,8 @@ if game.PlaceId == 8888615802 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/r4tin/Virus-Roleplay/main/HSHub"))()
     elseif game.PlaceId == 7180042682 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/r4tin/military-tycoon-hub/main/HS%20Hub"))()
+    elseif game.PlaceId == 10723695195 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/r4tin/is-free--yes-is-free-bro/main/anime%20evolution/HSHub/not%20very%20free%20lol"))()
     else
     game.Players.LocalPlayer:Kick("WE DONT HAVE A SCRIPT IN THIS GAME")
 end
